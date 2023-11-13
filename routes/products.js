@@ -4,11 +4,6 @@ const mongoose = require('mongoose');
 const multer=require('multer');
 const express = require('express');
 const router = express.Router();
-const FILE_TYPE_MAP = {
-    'image/png': 'png',
-    'image/jpeg': 'jpeg',
-    'image/jpg': 'jpg'
-}
 
 
 router.get(`/:id`, async (req, res) =>{
